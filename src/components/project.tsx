@@ -26,8 +26,10 @@ const Project = ({ title, repo, description, children, tags }: IProps) => {
 				<div className="projects--desc">{description}</div>
 				{children}
 				<div className="projects--tags">
-					{tags?.map(t => (
-						<span className="tag">{t}</span>
+					{tags?.map((tag, idx) => (
+						<span key={idx} className="tag">
+							{tag}
+						</span>
 					))}
 				</div>
 			</div>

@@ -1,0 +1,45 @@
+@import './theme.scss';
+
+header {
+	.container {
+		text-align: end;
+	}
+
+	.wrapper {
+		margin: 0 auto;
+		padding: 1.45rem 1.0875rem;
+		flex-direction: row;
+		display: inline-flex;
+		justify-content: space-evenly;
+		background-color: transparent;
+		@media only screen and (min-width: 300px) {
+			width: 100%;
+		}
+		@media only screen and (min-width: 768px) {
+			width: 60%;
+		}
+		@media only screen and (min-width: 1200px) {
+			max-width: 960px;
+			width: 40%;
+		}
+	}
+
+	.item {
+		transition: all 0.1s ease-in;
+		cursor: pointer;
+		top: 0;
+		&:hover {
+			position: relative;
+			top: -2px;
+			cursor: pointer;
+		}
+	}
+
+	.link {
+		color: white;
+		text-decoration: none;
+		text-transform: lowercase;
+		font-family: 'Anonymous Pro';
+		font-weight: 600;
+	}
+}

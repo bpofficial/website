@@ -1,9 +1,14 @@
 name = "braydenp"
 type = "webpack"
 account_id = "f48df82b08ae402f0dd596f2e1ee9b0c"
-workers_dev = true
-route = ""
 zone_id = "f0d3506d68358e485ec3db98815abf2e"
+
+[env.development]
+workers_dev = true
+
+[env.production]
+workers_dev = false
+route = "braydenp.com/*"
 
 [site]
 bucket = "./public"

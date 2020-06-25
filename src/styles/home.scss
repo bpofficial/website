@@ -1,0 +1,40 @@
+@import './theme.scss';
+
+.home-container {
+	display: flex;
+	height: 80vh;
+	flex: 1;
+    padding: 8%;
+}
+
+.title {
+	max-width: fit-content;
+	min-width: 400px;
+	width: 100%;
+	text-align: left;
+	margin: auto;
+	& > div {
+		line-height: 0.85;
+	}
+}
+
+.hi {
+	color: $primary;
+	font-size: 22px;
+	font-weight: 900;
+	font-family: 'Anonymous Pro';
+}
+
+.name {
+	color: white;
+	font-size: 60px;
+	font-weight: 900;
+	font-family: 'Anonymous Pro';
+}
+
+.whatido {
+	color: $highlight;
+	font-size: 60px;
+	font-weight: 900;
+	font-family: 'Anonymous Pro';
+}
